@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<style>
+    html{
+        background:url(https://cdn-media-1.freecodecamp.org/imgr/MJAkxbh.png)
+    }
+legend{
+    font-family:sans-serif;
+}
+[type="radio"]
+{  margin: 5px 0px 5px 0px;
+    padding:5px 0px 5px 0px;
+}
+[type="checkbox"]{
+    
+}
+body{
+    padding: 0%;
+}
+a:hover{
+    color: blue;}
+    button{
+        border-radius: 5px;
+        color: white;
+        background-color: rgb(4, 4, 87);
+        padding:5px 10px 5px 10px
+    }
+    button:hover{
+        animation-name:background-color;
+        animation-duration: 500ms;
+    }
+    @keyframes{
+        100%{
+            background-color:#4791d0;
+        }
+    }
+    .register{
+        margin:0 auto;
+        width:400px;
+        padding: 20px;
+        background:#f4f4f4;
+
+    }
+.register-input{
+    display: block;
+    width: 100%;
+    height: 38%;
+    margin-top: 1px;
+    font-weight: 500;
+    font-family: sans-serif;
+    font-size: medium;
+    margin-bottom: 0em;
+    border-bottom: 1px; solid #d8d8d8;
+    padding: 10px 2px 10px 2px;
+}
+.input{
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    -webkit-box-sizing: border-box;
+}
+.username{
+    padding: 10px 0px 10px 0px;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 500;
+}
+
+.password{
+    text-align:center;
+}
+</style>
+<html>
+    <head>
+        <title> SN Bootcamp Registration Form</title>
+        <link rel="stylesheet"href="css/style.css"/>
+    </head>
+    <body>
+        <form class="register">
+            <legend><center><h2>SIGN UP</legend></center></h2><br>
+            <label for="first name">First Name:</label>
+            <input type="text" class="register-input"id="first name"name="first name"><br><br>
+            <label for="middle name">Middle Name:</label>
+            <input type="text"class="register-input"id="middle name"name="middle name"><br><br>
+            <label for="last name">Last Name:</label>
+            <input type="text"class="register-input"id="last name"name="last name"><br><br>
+            <label for="phone">Phone Number:</label>
+            <input type="tel"class="register-input"id="phone"name="phone"placeholder="[+234]"><br><br>
+            <label for="date">Date of Birth:</label>
+            <input type="date"class="register-input"id="date"name="date"><br><br>
+            <label for="email">Email Address:</label>
+            <input type="email"class="register-input"id="email"name="email"placeholder="@gmail.com"><br><br>
+            <label for="nationality">Country:</label>
+            <input type="text"class="register-input"id="nationality"name="nationality"><br><br>
+            <label for="state">State of Origin:</label>
+            <input type="text"class="register-input"id="state"name="state"><br><br>
+            <label for="residence address">Residence Address:</label>
+            <textarea name="residence address"class="register-input" id="residence address" cols="50" rows="2"></textarea><br><br>
+            <label for="gender">Gender:</label>
+            <input type="radio"id="gender"name="gender"value="male"/>Male
+            <input type="radio"id="gender"name="gender"value="male"/>Female<br/><br>
+            Select Slack:<br>
+            <input type="checkbox"id="Ui/Ux"name="Ui/Ux"value="ui/ux"/>
+            <label for="Ui/Ux checked">UI/UX</label><br>
+            <input type="checkbox"id="Data Analysis"name="data analysis" value="data analysis"/>
+            <label for="data analysis">Data Analysis</label><br>
+            <input type="checkbox"id="front end"name="front end" value="front end" checked/>
+            <label for="front end">Front-End</label><br>
+            <input type="checkbox"id="back end"name="back end" value="back end"/>
+            <label for="back end">Back-End</label><br><br>
+            <label class="username" for="username">Username:</label><br>
+            <input type="text"id="username"name="username"/><br><br>
+            <label for="password">Password:</label></br>
+            <input class="password"type="password"id="password"name="password"><br>
+            <button><a href="displaypage.html"target="blank">Submit</button>
+        </form>
+    </body>
+</html>
